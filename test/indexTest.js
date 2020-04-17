@@ -1,8 +1,8 @@
 describe('my own map-like methods', function() {
- describe("map returns an array with all values made negative", function() {
-   it("transforms correctly", function(){
+describe("map returns an array with all values made negative", function() {
+  it("transforms correctly", function(){
       expect(map([1, 2, 3, -9], function(a){ return -1 * a } )).to.eql([-1, -2, -3, 9])
-   })
+  })
 
   describe("map returns an array with the original values", function() {
     it("transforms correctly", function(){
@@ -22,7 +22,7 @@ describe('my own map-like methods', function() {
       expect(map([1, 2, 3, -9], function(a){return a * a})).to.eql([1, 4, 9, 81])
     })
   })
- })
+})
 })
 
 describe('my own reduce-like methods', function() {
